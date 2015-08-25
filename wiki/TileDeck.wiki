@@ -1,0 +1,52 @@
+#summary Building up the Tile Deck
+_This supports version 0.2 of [RuleSetVersion02 current ruleset]_
+
+<wiki:toc max_depth="4" />
+=Tile Deck=
+==Design Principles==
+The purpose of the [TileDeck Tile Deck] is to allow a gameboard to be dynamically generated, allowing for a faster setup time, and more replayability. It also controls geographically specific items in the game map;
+ * Initial population of zombies
+ * Upgrade Items
+ * Set Pieces
+ * Witch Spawns
+Are items controlled by the [TileDeck Tile Deck] in version 0.2 of the ruleset. Also on the cards are Upgrade Items, which are bonus Items that can be paid for with XP by the players.
+
+==Card Layout==
+
+_(Layout graphic to be added)_
+
+ # Card Name and Number (for ID purposes)
+ # New Tile graphic
+ # Item Spawns (also on graphic)
+ # Special Rules
+  * Zombie Swarms
+  * Additional Spawns (in addition to [DirectorDeck Director Deck] card)
+  * Blocked Exits
+ # Upgrade Items (and spawn location)
+
+==Deck Composition==
+
+_Supporting V0.2 of ruleset, and version V0.2 of Tileset_
+
+|| *Card Number* || *Card Name* || *Tile Graphic* || *Free Items* || *Spawns* || *Upgrade Item* ||
+||1||Right Bend||Right 1||None||None||Pipebombs||
+||2||Left Option||Right 1 (Left 1)||Cylinder||2 round swarm +8||Ammo Stash||
+||3||Showdown||Forward (2 left, 2 right)||Ammo Stash, Pain Pills, Molotovs||6 Round Swarm +5||Weapon Stash, Health Packs||
+||4||Sharp Left||Left 2||None||None||Molotovs||
+||5||Dead End, Go Left||Left 1(forward)||None||3 round swarm +10||Health Packs||
+||6||Sharp Right||Right 2||None||None||Cylinder||
+||7||Dead End, Go Right||Left 1(forward)||Molotovs||+5 zombies, +5 in next spawn||Weapon Stash||
+||8||Straight On||Forward||None||None||Pistols||
+||9||Straight On||Forward||None||None||Pipebombs||
+||10||Crossroads||Forward (1 left, 1 right)||None||3 round swarm +8||Health Packs||
+||11||J-Turn Right||Right 2(forward)||Weapon Stash||Witch||Pain Pills||
+||12||Left Bend||Left 1||None||None||Pain Pills||
+||13||Right Option||Left 1 (right 1)||Gas Can||+5 zombies||Pain Pills||
+||14||Sharp Right||Right 2||None||None||Gas Can||
+||15||J-Turn Left||Right 2(forward)||pipebombs||+8 zombies, +5 next spawn||Molotovs||
+||16||Sharp Left||Left 2||None||None||Pistols||
+||17||Left Bend||Left 1||None||None||Gas Can||
+||18||Right Bend||Right 1||None||None||Ammo Stash||
+||19||Straight On||Forward||None||None||Molotovs||
+||20||Right Bend||Right 1||None||None||Weapon Stash||
+||21||Left Bend||Left 1||None||None||Cylinder||

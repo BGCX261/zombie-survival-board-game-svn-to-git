@@ -1,0 +1,55 @@
+#summary Attack Deck, Version 1
+
+= Composition =
+|| *Card Number* || *Name* || *Type* || *Attack Value* || *Special Attack Value* || *Friendly Fire Flag* ||
+||1||Heatshot!||Attack||1||3||N||
+||2||Short Burst!||Attack||1||3||Y||
+||3||Wild Burst||Attack||2||2||Y||
+||4||Controlled Fire||Attack||2||1||N||
+||5||Controlled Fire||Attack||2||1||N||
+||6||Wild Spray||Attack||3||1||Y||
+||7||Suppressing Fire||Attack||3||0||N||
+||8||Bad Shot||Miss||0||0||N||
+||9||Heatshot!||Attack||1||3||N||
+||10||Short Burst!||Attack||1||3||Y||
+||11||Wild Burst||Attack||2||2||Y||
+||12||Controlled Fire||Attack||2||1||N||
+||13||Controlled Fire||Attack||2||1||N||
+||14||Wild Spray||Attack||3||1||Y||
+||15||Suppressing Fire||Attack||3||0||N||
+||16||Bad Shot||Miss||0||0||N||
+||17||Heatshot!||Attack||1||3||N||
+||18||Short Burst!||Attack||1||3||Y||
+||19||Wild Burst||Attack||2||2||Y||
+||20||Controlled Fire||Attack||2||1||N||
+||21||Controlled Fire||Attack||2||1||N||
+||22||Wild Spray||Attack||3||1||Y||
+||23||Suppressing Fire||Attack||3||0||N||
+||24||Bad Shot||Miss||0||0||N||
+||25||Heatshot!||Attack||1||3||N||
+||26||Short Burst!||Attack||1||3||Y||
+||27||Wild Burst||Attack||2||2||Y||
+||28||Controlled Fire||Attack||2||1||N||
+||29||Controlled Fire||Attack||2||1||N||
+||30||Wild Spray||Attack||3||1||Y||
+||31||Suppressing Fire||Attack||3||0||N||
+||32||Bad Shot||Miss||0||0||N||
+||33||Heatshot!||Attack||1||3||N||
+||34||Short Burst!||Attack||1||3||Y||
+||35||Wild Burst||Attack||2||2||Y||
+||36||Controlled Fire||Attack||2||1||N||
+||37||Controlled Fire||Attack||2||1||N||
+||38||Wild Spray||Attack||3||1||Y||
+||39||Suppressing Fire||Attack||3||0||N||
+||40||Bad Shot||Miss||0||0||N||
+||41||Heatshot!||Attack||1||3||N||
+||42||Short Burst!||Attack||1||3||Y||
+||43||Wild Burst||Attack||2||2||Y||
+||44||Controlled Fire||Attack||2||1||N||
+||45||Controlled Fire||Attack||2||1||N||
+||46||Wild Spray||Attack||3||1||Y||
+||47||Suppressing Fire||Attack||3||0||N||
+||48||Bad Shot||Miss||0||0||N||
+
+==Notes==
+ * Damage may be too low to deal with negative value weapons.

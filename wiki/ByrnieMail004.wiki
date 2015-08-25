@@ -1,0 +1,17 @@
+#summary 2nd Email from Byrnie
+
+Um, might not be a great idea, but how about giving them a set of six cards for movement?  could use tokens I guess, but six cards of the player colour would mean that there wouldn't be any arguments about how many actions people have left etc...
+
+6 sounds like a good initial number for playtesting.
+
+Hm, true.  It would add a further tradeoff for low clip weapons, which we maybe don't need.
+
+Priorities I think is the easiest way.  I think you might be right - Pipebomb may well trump vomit.  That way its simple to determine what moves where which makes the enemy quick to run and quite predictable (which is good, given they're zombies...)
+
+Like the director plan, sounds like a good initial stab at balance.  I assume that cards that give items will generally have more zombies then those that don't?
+
+I think spawn limits are best set by having none initially and then scaling back a little whenever "ooh, that's harsh" is uttered ;)
+
+If they all move or not - depends how frantic you want the game really... if they do they'll have to be weaker...
+
+Oh, hang on - idea.  How about having damage done to zombies knocked off their MP?  that way you could keep them back even if you only have a hand full of low damage cards...

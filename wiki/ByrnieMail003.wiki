@@ -1,0 +1,34 @@
+#summary 2nd Email to Byrnie
+
+In the initial plan the players have 3 phases
+1) Movement (prior to any attack cards). 1MP to move to any adjacent hex, nad free change of face
+2) Attack/Move (after first attack card plated). As above, but each change of face cost 1MP
+3) Responses (after zombie movement). No hex movement, but change of face for 1MP
+
+Based on the arbitary 6 movement it gives them a trade-off between sprinting the level and flexibility to draw targets.
+
+I had considered the "discard a card", however it doesn't scale well between auto weapons (large hand limit) and single-shot weapons (small hand limit). On the downside, it does make tracking MP a bit harder.
+
+On the normal zombie front, a priority-based system could work. Especially with the health system (which is really good...hadn't thought of that. Also makes for a shorter amount of HP. have 4 levels, and 5HP per level. It would also be easier to determine the overall player status)
+P1-tagged player (boomer goo)
+P2-pipebomb (may be P1, can't remember)
+P3-lowest level player
+P4-closest player
+
+I've had a thought about spawning the normals, and linking it back to the Director Deck and tiles. On each tile number each blocked side to cover a D6 roll, then then spawns are dealt with on the card by
+Players Combined State < x = 5 zombies on tile behind them
+Players Combined State >x and <y = 5 zombies on tile in front of them
+Players Combined State > y = 5 zombies on their tile
+
+then roll for each zombie, and place them on the side (in the wall effectively) on the relevant tile...then they are literally "comin' out the g0d-dam walls". From there they then move directly towards the relevant target. You may have to impose some limits (no spawning directly next to a player? I suppose it happens in the game. You could have specific hex spawn points marked on each tile?)
+
+btw, for the zombies I am using the "Zombies!" plastics, which are perfect, and plentiful. Current Move is 6 (same as players). I haven't yet determined if all move every turn, or some based on Director Deck draw/circumstances. So if the players are at a set-scene tile all zombies will always move, whereas a more general "passing through" tile only some move (a number determined by that turns Direct Deck card).
+
+For special zombies, you can go 2 ways
+1) Same as Left4Dead, and have certain classes
+or (slightly easier)
+2) Simply make them tougher normals.
+
+(2) would be simpler for full Co-op play. They could be spiced up by being given a random ability (another card draw?). givem them more damage (or as currently in V0.2 of the rules, they have to be specifically targetted, and attack cards do different damages, so some would be good at taking down swarms, but rubbish against specials, or a "Headshot" card, which is great against a special, but pointless against a normal who would die from a single hit), cause more damage, move faster, can grapple/pin a player etc etc.
+
+For (1) you would need to make the specials the focus of the OL/Vs playtype, and would be better off stealing Left4Dead type attacks, and freeing up spawn rules for them too (to a more typical "out of LOS, more than x tiles away"). Leave the normals following basic priority attacking, and let the OL player(s) focus on ganking the players.

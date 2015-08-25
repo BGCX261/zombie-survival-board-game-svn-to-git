@@ -1,0 +1,149 @@
+#summary Second version of ruleset
+<wiki:toc max_depth="4" />
+= Ruleset V0.2 =
+
+==A. Phase Overview==
+
+ # Player Movement
+  * (situational) - draw [TileDeck Tile Deck] and setup new tiles
+  * (situational) - Place New Area Tile(s)
+  * (situational) - Draw [DirectorDeck Director Deck] card for new area
+  * (situational) - place new spawns
+ # Player Attacks/Movement
+ # Draw [DirectorDeck Director Deck] for Zombie Turn
+ # Advance [SpawnTrack Spawn Track] for [SpecialZombies Special Zombies]
+ # Place new spawns from [DirectorDeck Director Deck] and special spawns
+ # Zombie Movement
+  * (optional) Player Response Attacks
+ # Zombie Attacks
+
+==B. Phase Details==
+
+===1. Player Movement===
+
+Players can move 6 hexes per turn (6mp). In this phase all turns are free.
+Players lose 1mp for each adjacent zombie at the start of their movement phase.
+Players may change stance (crouched > standing > crouched) for 1mp
+Change weapon (pistol(s) > main weapon > pistol(s) ) for 1mp
+
+A player who wishes to use a Healing Pack on themselves item may spend no mp in their turn.
+A player wishing to heal an adjacent player may spend mp.
+Players must announce in this phase that they are attempting to heal (themselves or someone else)
+
+Players may move through other players hexes, but may not stop in the same hex. If at any point the player is forced to stop in the same hex they are moved to their previous hex.
+
+===1a. - A Tile Deck card should be drawn===
+When a player first moves onto a tile with one or more open exits new tile(s) are placed. First the player draws a [TileDeck Tile Deck] Card, which will list;
+
+ * The new Tile(s) and positioning
+ * Object placement (e.g. cars, trains, step-ups)
+ * Player pickups (guns, health, ammo, explosives)
+ * Special Rules (time release exits, trigger objects, area specific rules)
+ * Tile Upgrade (See below)
+
+====Tile Upgrades====
+Before the [TileDeck Tile Deck] card is drawn, players may decide to spend any Points they have accrued on upgrading the Tile. Each [TileDeck Tile Deck] card has a Item noted on it, and paying the points for the Upgrade will cause this item to spawn. Note that the players decide to spend the Points *before* seeing the card.
+
+===1b - Place new area tiles===
+These are placed to join up with the open exits from the current tile. If the newly placed tile has any non-main route sides then dead-end tiles should be drawn to fill these in as per the [TileDeck Tile Deck] Card.
+
+===1c - Draw Director Deck card for new area===
+The [DirectorDeck Director Deck] list monsters that spawn. These are modified by the players curent status.
+
+===1d. - Spawns should be placed as per the Director Card===
+You should now place the normal zombies listed on the [DirectorDeck Director Deck] card. For each zombie, roll a D6 and place the model on the numbered hex of the tile specified by the [DirectorDeck Director Deck] card. If more than one zombie is to be placed in a single hex, randomly determine an adjacent hex by re-roling the D6 and using the the standard [ScatterChart Scatter Chart]. Re-roll any result that indicates an invalid location. If this still results in multiple zombies in the same hex leave them as-is, however in the later movement phase zombies must move into an empty hex.
+
+====Tile Upgrade Items====
+Once all the zombies have been placed, the location of any Tile Upgrade items should also be randomly determined using the same method. (this could mean that the Item is in the same hex as a zombie...bad luck!)
+
+===2. Player Attack/Movement===
+Players may continue to spend mp after playing an [AttackDeck Attack Card], however movement costs are increased;
+change of direction (to any new facing) - 1mp
+Move directly backwards - 2mp
+Players continue to use their initial pool of 6mp. No additional mp are lost for adjacent zombies at the beginning of this phase.
+
+Players may play [AttackDeck Attack Cards] upto the limit of their current weapon.
+
+====Reloading and Healing====
+If a player chooses to RELOAD their current weapon they may play no [AttackDeck Attack Cards] in any phase this turn. Player must announce at the start of this phase that they are reloading.
+A player who is using a Healing Pack may play no [AttackDeck Attack Cards] in their turn. If a player is being healed by another player they may spend [AttackDeck Attack Cards], however normal LOS rules apply for the adjacent player.
+
+====Melee Attacks====
+A player may do a single melee attack in their turn (so long as they are not healing or reloading) at a cost of 2MP. This also reduces the number of [AttackDeck Attack Cards] that may be played by that player by 1 (to a minimum of 1). A melee attack pushes back the 3 zombies in the front-facing arc of the player back 1 space. This may cause multiple zombies to be in a single space.
+
+====Playing Attack Cards====
+In the attack phases (2. Player Attack/Movement and 6a. Player Responses) players may use [AttackDeck Attack Cards] from their hand. The total number of cards they may play across both phases is equal to the firing rate of the weapon they are carrying.
+
+====Damaging Zombies====
+Each [AttackDeck Attack Card] shows how many normal zombies it can remove (1-3) and how much damage it can cause to a [SpecialZombies Special Zombie] (0-3). Some [AttackDeck Attack Cards] are better at clearing mobs, others at doing pinpoint damage to [SpecialZombies Special Zombies]. The player chooses to either use it against normal zombies in range and LOS, or against a single [SpecialZombies Special Zombie]in range and LOS.
+
+====Gun Modifiers====
+Each gun has a base damage listed on the card, which is used to modify the damage on each attack card played. Each gun also has a range, which is used to determine the base range at which attack cards can affect zombies. This is modified by any range modifier on the attack card.
+
+====Friendly Fire====
+Some [AttackDeck Attack Cards] have a red border (typically the more powerful ones). When used with an automatic weapon (SMG, Assault Rifle, Auto-Shotgun) they indicate that any friendly player within the fire arc (and range) takes 1 wound unless crouched (the consequence of long, uncontrolled volleys). LOS can be blocked by objects, but not zombies or other players.
+
+====Zombie Health====
+Normal zombies have 1 wound, and are automatically removed.
+[SpecialZombies Special Zombies] have wounds according to their class.
+
+===3. - Draw Director Deck Card for Zombie turn===
+A [DirectorDeck Director Deck] card is turned over (even if one has already been played to reveal a new tile this turn. This card will indicate how many normal zombies appear this turn, and where they will spawn.
+
+====Determining Player State====
+To work out how the effect of a [DirectorDeck Director Deck] card, you need to work out what the [PlayerState Player State] is for the whole party.
+
+Each player has 4 levels of health;
+ * Level 1 - Pristine (0-5 wounds)
+ * Level 2 - Bleeding (6-10 wounds) (-1MP)
+ * Level 3 - Torn Up (11-15 woulds) (-2MP)
+ * Level 4 - Staggering (16-20 wounds) (-3MP)
+
+To work out the results of the [DirectorDeck Director Deck], simply add the levels of all the players (so a team with a State of 4 is in good health, while a team in a state of 16 is pretty much running on empty!).
+
+A dead player counts as level 4.
+
+===4. - Advance Spawn Tracks for Special Zombies===
+The [SpawnTrack Spawn Track] is used to determine when [SpecialZombies Special Zombies] are available to be placed on the board. it consists of a number of tracks which the special zombies move down 1 space each turn. When the zombies reach the end of the track they are available to place on the board.
+
+In this phase move each [SpecialZombies Special Zombie] 1 space to the right on the [SpawnTrack Spawn Track]. If a track is empty take one [SpecialZombies Special Zombie] from the pool, and place it in the left-most slot of the empty [SpawnTrack Spawn Track]. If a zombie reaches the right-hand side of the track it is on remove it, and place it next to the game board ready for spawning.
+
+===5. - Place Spawning Zombies on the Board===
+You should now place the normal zombies listed on the [DirectorDeck Director Deck] card, and any [SpecialZombies Special Zombies] from the [SpawnTrack Spawn Track] on the board. Starting with [SpecialZombies Special Zombies], roll a D6 and place the model on the numbered hex of the tile specified by the [DirectorDeck Director Deck] card. If more than one zombie is to be placed in a single hex, randomly determine an adjacent hex by re-roling the D6 and using the the standard [ScatterChart Scatter Chart]. Re-roll any result that indicates an invalid location. If this still results in multiple zombies in the same hex leave them as-is, however in the subsequent movement phase zombies must move into an empty hex.
+
+===6. - Zombie Movement===
+You should now move the zombies. The [DirectorDeck Director Deck] card shows at the bottom how many normal zombies should move. All [SpecialZombies Special Zombies] move every turn.
+
+====Determining the target====
+Normal zombies will move based on Priorities. They will move towards the highest priority target within their movement range.
+
+ * Priority 1 - An Active PipeBomb
+ * Priority 2 - A Slimed Player
+ * Priority 3 - A "pinned" player
+ * Priority 4 - based on Health levels
+ * Priority 5 - Closest target
+
+[SpecialZombies Special Zombies] move before normal ones, however will not "pin" a player until the next phase, so priorities are not impacted by other moves that turn
+
+A zombie will attempt to get as close as possible to the prioritised target. They can move through hexes occupied by other zombies, however may not finish their move in the same hex as another zombie.
+
+Normal Zombies move 6 hexes per turn. They have no facing.
+
+====Special Zombie Movement====
+
+Work in progress in separate section - [SpecialZombies Special Zombies]
+
+===6a. - Player Responses (Overwatch)===
+Once all zombies have moved players may spend any remaining [AttackDeck Attack Cards] and Movement Points they have. Player may;
+ * Change facing - 1MP
+ * Play an [AttackDeck Attack Card]
+ * Melee attack (2MP and one less attack card, to a minimum of 1)
+
+Players may not move, change stance, or use any special items (explosives, healing packs, pills etc etc). Players may not Reload.
+
+===7. - Zombie Attacks===
+Once all players have completed their responses zombies can attack.
+
+[SpecialZombies Special Zombies] attack first - This bit is in progress.
+
+Normal zombies cause 1 point of damage to an adjacent player. If a zombie is adjacent to multiple players then use the Target Priority to determine who is hit. If the case of a tie (Priority 5) both players are injured (note that as normal zombies move after [SpecialZombies Special Zombies], a player _can_ be pinned before the normal zombies attack).

@@ -1,0 +1,66 @@
+#summary Thoughts on the nature of Co-operative gameplay in boardgames
+<wiki:toc max_depth="4" />
+
+=The Problems with Co-Op Board Games=
+One of the key issues is that of the _gestalt team_, where players do not have overall control of their player, and ultimately all moves are determined by committee, rather than the controlling player. This is certainly the case with games such as Descent and Doom. Pandemic, another co-op game, suffers the same issue, and ultimately one player (typically the noisiest (and if anyone is reading this I'm fully aware that I fit quite well into that category) dictates the overall strategy, and a lions share of the actions. Other players can turn into little more than piece movers and dice rollers.
+
+Another issue is that of achievement. A team victory is harder to feel good about, and quite often one member of a team (either by luck, experience or simply better play) will end up being the star, while other players get a much lesser sense of accomplishment. Any goals met (or missed) lose some of the personal association, as they belong to the team, rather than the player.
+
+Computer games (such as Left4Dead) can deal with this in a much better way, as eachplayer has exclusive access to his own controls, and while they can request other players help, they have no ability to coerce or dictate. Specifically to Left4Dead, Co-Op is enhanced by having key actions that support each other;
+ * Helping pinned players
+ * Reviving downed players
+ * Healing each other
+ * Providing covering support
+
+=Dealing with these Issues=
+For now I'm going to dump my brain on possible ways of dealing with these issues. Once the [DevelopmentKeyRuleset Core Ruleset] is completed I will re-visit this area, and attempt to add these ideas into the game
+
+==Personal Goals==
+The key aim of the game is to complete/survive as a team, however if players could be given individual goals to achieve within the game then there could be a winner within the team (a first-amongst equals). 
+
+Red November has a mechanism where 1 player can win, while all others lose (the concept of the game is to keep a submarine working for 60 minutes...there is an option for players to flee at the end, and if the sub subsequently sinks then that player will win).
+
+These goals could either be beneficial for the team, or negative (either directly by hampering other players, or diversionary, by distracting the player from the core team need (for example, you could have a mission to collect "samples" from any special zombie killed. The player has to goto the hex a special died at, and spend 2MP/end movement there to collect samples). 
+
+With negative goals especially (e.g. horde all the health packs you find / eat as many painkillers as you can get your hands on) the goals would probably have to be secret...even moreso if the goals directly impact other players (cause as much frieldy fire damage as possible!)
+
+It could be an option that players "buy" these goals (I'm already in the process of implementing an XP system, in return for killing specials/beating set pieces), and then once the goal is completed a character enhancement is activated, so for example;
+
+Player A buys a Character Upgrade card for 5XP. This has the wording;
+{{{
+*Masochist*
+_There is only space on that chopper for one, and you know who that is going to be..._
+Cause 5 points of Friendly Fire on one other player.
+
+Once completed, reveal this card, and gain the following ability;
+_Gain 1MP per turn. This can only be used for hex movement, not other actions_
+Counts for 1VP at end of game if completed
+}}}
+As the card is secret to the player, they now have the option of "accidentally" deciding to pop a few rounds into one of the other players. This would also encourage the players to keep attack cards secret... "sorry, but it was the only card I had to try and keep them off you...".
+
+In Progress - a list of possible [PersonalGoals Personal Goals]
+
+==There Can Only Be One==
+...aka The Double Dragon ending. I don't really rate it as an idea, but I'll include it here for completeness.
+Basically, at the end of the game players fight each other to the death...no second place blah blah blah. This would almost certainly spill over to pre-game sniping, and possibly bad blood/player elimination...
+
+==The Traitor==
+In Battlestar Galactica, one or more players is a traitor, and secretly working for the opposition. I can't really see a way of working this into the game concept (it's very hard to be secretly working for the other side, when your main communication method is an assault rifle).
+
+==Class-Based Gameplay==
+Battlestations uses this...the game is multi-faceted, and only by having all players and classes available can the team succeed. This doesn't really get away from the gestalt team, but does offer more in the way of personal achievement ("without me, we would never have succeeded!"). It stops one player becoming the main attraction. Descent uses this to some extent, with 3 general player groupings (Magic users, Ranged weapon users and Melee Tanks).
+
+Moving down this route would move heavily away from the Left4Dead initial concept, and I prefer the idea of all players starting off equal (it will be far easier to ensure all players have the same chance of a good game, and only later player upgrades and equipment will separate them).
+
+This could in theory be linked in some way with the "player goals" idea above. For example;
+{{{
+*Pistolier*
+_Shotguns are for show...real men use pistols..._
+Deal the Killing Shot to 2 Special Zombies using your pistol/dual pistols.
+
+Once completed, reveal this card, and gain the following ability;
+_You may play 1 extra attack card per turn when using pistols_
+Counts for 1VP at end of game if completed
+}}}
+
+So by using a weapon, players can improve in it's use, and thus start playing a more specialist role within the team.

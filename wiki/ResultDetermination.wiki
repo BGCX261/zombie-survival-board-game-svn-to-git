@@ -1,0 +1,56 @@
+#summary Thoughts on how to add chance into the game
+<wiki:toc max_depth="4" />
+
+=Chance vs Skill=
+==The Dangers of Dice==
+Most exploration/combat-based board games use dice as their random number generator. Most of these can be considered RPG-Lite'esque games, which almost exclusively use dice for their chance determination. Alternately, Wargames (which could be considered the big daddy of board games) also have extensive use of dice.
+
+Dice are OK when you look at them over a protracted period of time. If we consider the humble D6, if you roll 600 of them you can expect roughly 1 in 6 of them to come out as a 6. When we lok at it at a more micro-scale, however, the player has no control over individual dice rolls, and key game points often come down to pure luck as a dice is rolled to determine if a player/team wins or loses. When you consider the time investment in a game, such an outcome is a long way short of desireable.
+
+The other issue with dice is their lack of granularity. If we once again consider the D6, if we want a result where an attack misses, unless we start to deal with multiple dice rolls the smallest chance we can provide for such an action is 1 in 6. Many games provide mechanisms to attempt to incrase this (for example Battlestations has an extensive number of player abilities that allow rerolls of dice), however this can be considered to slow down a game turn while dice are re-selected/re-calculated.
+
+Finally, at a more basic level, dice can be physically destructive to a game, due to vigorous over-rolling!
+
+==The Benefits of Dice==
+The benefits of dice are more obvious. It is a quick and easily understandable mechanism, and within certain constraints easily scalable. In Descent a single dice roll is used to determine Hit/Miss, Range and Damage, offering a quick and easily grasped mechanism (as well as being extremely familiar to nearly all game players). Dice also offer an easily re-usable resource, as well as cheap.
+
+==Possible Alternative==
+As part of the development of this game I intend to explore an alternative mechanism to dice for Combat. In a mechanism partially inspired by Starcraft:TBG I plan to use a card-based combat system.
+
+The plan is for each player to have an [AttackDeck Attack Deck] of approximtely 50 cards. This will consist of 2 types of card;
+ # Damage Cards, displaying numbers from 1-3
+ # Miss Cards
+
+From this initial deck when a player gains a new weapon they will create a new sub-deck representing the total amount of ammo associated with that gun (this sub-deck will be refreshed whenever new ammo is picked up, or a new weapon is gained). From this sub-deck players will have a hand of cards representing the current gun clip (and this will vary based on the ammo capacity of the weapon).
+
+Players will then spend cards from their hand to attack, rather than roll dice. The number of cards they can play will be based again on the weapon, representing it's Rate of Fire. The value of damage cards will be modified by a damage value from the weapon, simulating the hitting power of the weapon. Miss cards will need to be played at strategic moments, effectively weakening the potential attack power of the player.
+
+To Reload (refresh the hand of cards) will cause the player to miss a round of attacks, and leave them defenceless. Reloading does not discard the un-used card, but places them back into the sub-deck. 
+
+===Decision Tree===
+The plan is for this mechanism to turn combat from a purely roll'n'hope affair to more of a hand-management sort of thing. Players will know to a fairly high level what cards are in their deck, and then have to make various decisions;
+ * Should they use a good card in hand now, knowing it's rarity
+ * Should they play a Miss now, or Reload, thus diluting the quality of the remaining ammo
+ * Should they take new ammo, knowing they have thinned out many bad/weak cards
+
+====The Movement of Chance====
+The swap from dice to a deck moves the point of chance 1 step away from the player, and offers a layer of control back, instead giving decisions (as above). Ultimately the amount of damage the player can put out will be statistically similar to using dice, however players are less at the mercy of pure chance.
+
+===Friendly Fire===
+To add further challenge, I intend to make some higher value attack cards "Friendly Fire", causing a risk of injuring the players own team. This should end up with players making decisions to either keep damage output up and risk injuring other players, or causing less damage, but doing so safely.
+
+===Re-implementing Dice===
+To represent this with D6 I would need to have the following
+ # A way to track total dice rolls (to represent total ammo values)
+ # A way to track ammo left in the current clip
+ # Multiple levels of information on the dice;
+  * Miss
+  * 1 damage
+  * 2 damage
+  * 2 damage
+  * 3 damage
+  * 3 damage + friendly fire
+
+This takes a key thing out of the control of the player (friendly fire), which would probably result in players feeling unfairly treated. 
+
+I am going to set up some dice to represent this and playtest it, however on paper it does not sit well with me.

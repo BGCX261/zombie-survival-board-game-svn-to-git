@@ -1,0 +1,22 @@
+#summary A list of possible Personal Goals
+
+=Ideas for Personal Goals=
+|| *Name* || *Objective* || *Percieved Difficulty (1-5)* ||
+||Pistolier||Kill 2 [SpecialZombies Special Zombies] with pistols (land killing blow)||3||
+||Keep Moving||Recover 2 other players from Pinned||2||
+||Scientist||Recover 4 [SpecialZombies Special Zombie] samples||2||
+||Sadist||Cause 5 points of friendly Fire damage to team-mates||4||
+||Slayer||Kill 10 zombies in one round||3||
+||Pacifist||Kill no zombies for 3 rounds||2||
+||Medic||Heal another player when their health is higher than yours||2||
+||Headshot||Use a Headshot! card on a normal zombie||5||
+||Trigger-Happy||Use all the ammo in a primary weapon||2||
+||Sweeties!||Eat 5 packs of Pain Pills in one level||1||
+||Sterilize||Set fire to a team-mate using a molotov||5||
+||Protector||Kill 5 zombies adjacent to other players in the response phase||3||
+||Hand-off||Melee a zombie so that it attacks an another player||3||
+||Hero||Recover another player after being the last player un-pinned/downed||2||
+||Glass Jaw||Be downed by normal zombies||1||
+||Frontrunner||Be the player to trigger 3 consecutive tile reveals||2||
+||Vanquisher||Deal the killing blow to 5 [SpecialZombies Special Zombie]||2||
+||Clear Distance|| Start and end your turn on a different tile to all other players||3||

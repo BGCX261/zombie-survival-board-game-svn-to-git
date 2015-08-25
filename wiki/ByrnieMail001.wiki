@@ -1,0 +1,44 @@
+#summary First Email to Byrnie
+
+Morning
+
+I was wondering if I could get some opinions off you, regarding a small project-ette I'm currently having ago at.
+
+I've decided to have a crack at designing a boardgame that meets some of our requirements for Co-op dungeon-bashing. I've come up with some basic ideas, and as an initial theme/concept I'm using Left4Dead.
+
+Ideas I currently have are;
+1) Hexagonally-based random layout
+http://i39.tinypic.com/110zo1x.jpg
+
+This is an example. The tiles with white arrows are laid out as a core route, and red arrow routes are filled in as optionals. The tiles are drawn as the players advance, and are populated using a "Director Deck" (see 5)
+
+2) Rather than dice, players have a hand of "attack cards" that represent their shots (each giving a number of hits). The "Clip size" of the weapon is the hand size, the "firing rate" is the number of cards they can play per turn, and there would be per-weapon damage modifiers and range. To "reload" the player deals themselves a new hand, and cannot attack that turn. Ammo limits are done by limiting the total number of cards a player may redraw from (so when they pick up a weapon they also get a deck of x cards, equal to the weapons total ammo limit). Players effectively have free overwatch, but are limited on the number of attack cards they may play as per weapon.
+
+3) Movement is fairly simple, based on Movement Points (MP). Reduced by having adjacent zombies at the beginning of your go. Free turns until an attack card is played, at which point costs 1MP to change facing.
+
+4) Health/Damage - not fully sorted yet. Needs to be fairly granular, to allow constant small volumes of damage.
+
+5) Spawning (enemies/objects) - I have a concect of a "Director Deck", where every turn a card is drawn that details new zombies appearing, any objects available. Special Zombies (not really done much on them yet) would be controlled by a spawn tracker, where every turn they advance 1 up an off-board track until they reach the end, at which point they spawn on-board (this would allow difficulty tweaks, by reducing/increasing the track level, and number of tracks).
+
+The Director Deck cards would be modified by the current stauts of the players...for example, if the total player health < 50, spawn an item. If player health > 100, spawn a zombie horde. The idea is that this will keep pressure up, without crippling the players too fast.
+
+6) Here is where I could really do with your input. Zombie movement!
+I'm currently thinking that the game could be set up 1 of 3 ways
+a) Fully Co-Op - all players work together against the game. Zombies move according to a basic set of rules
+b) Co-op vs OL - ala Descent/Doom. Zombies are controlled via a single player vs a team
+c) Competitive Co-Op - Where the players work together, but also each take a zombie turn, and there is a winner within the team (a bit like Tomb, but with some work together conflicts).
+
+(b) is probably the easiest to do, however does restrict the way the game is played.
+(a) is more flexible, however I don't want the movement rules to be complex, yet at the same time offer a varied challenge. Easier to do Specials...
+(c) could end up with a gank-fest game type
+
+The plan is for adjacent zombies to damage once their movement is up (and player overwatch is resolved, making responses very important). I haven't really thought too much about Special Zombies yet, however they make movement/attack way more complex.
+
+One I have the core game mapped out, and am reasonably happy it is actually playable (I'm trying to remove some of the randomness of dice, hence the gun decks) I can start thinking about campaign rules/advancement.
+
+I have shared out some notes on Google Docs. I did a quick test run with rule set 0.1, and quickly realised
+1) Tiles were too small (I have done some more now, and will print them out tomorrow when I am back home)
+2) Too much info on the board (crouch/stand, damage etc etc)
+So have started work on a streamline set of rules.
+
+I'd really appreciate any input you have, especially if the actual idea is a bit poo :-) My main thougts are around the actual gametype (co-op, competitive, vs etc etc).

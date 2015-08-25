@@ -1,0 +1,19 @@
+#summary First Email from Byrnie
+
+Hi mate,
+
+Sounds good - think it has a lot of potential.  It sounds like it should be fun to play - the overwatch makes it very zombie movie-ish, with the zombies mainly getting to the people by sheer weight of numbers...
+
+Co-op is going to be the hardest to balance by a mile, as the others are to some extent self balancing.  It does sound like the most fun though - I don't know that OLing an endless wave of zombies will be much fun.  Hard to say though.
+
+For auto-movement, I agree we need some simple quick rules, and probably a chunk of playtesting.  The one that leaps to mind is to simply head for the closest player, which should spread the damage around the group and give potential for the players to protect a weaker one, etc.  In a tiebreak, the zombie goes for the one with the most zombies around already...
+
+Alternatively, if you had some chunky categories around your granular damage system (say four levels: [PlayerState pristine, bleeding, torn up, staggering] for instance) you could have them swarm the weaker players as a preference...
+
+If (say) you had a boomer vomit effect it could change the rules such that every zombie heads for the nearest vommed player unless they have to pass directly next to another player to do so... in which case they would stop and deal their damage to the nonvommed player.
+
+On zombies, I would have thought fast, weakish and plentiful - we ideally want to get the balance such that the players need to coordinate their reloads in order to avoid being swamped.
+
+On the overwatch, what do you think on facing changes?  Making them free would be dangerous - it would make the most effective tactic to not fire on your turn but instead wait for overwatch to save your MP for running... maybe something like having to discard a card to change facing?  would represent ammo wasted while spinning like a sprinkler quite well..
+
+Hm, that's probably enough initial blithering... probably better for me to back-and-forth this than write a treatease that's based on something you didn't intend ;)

@@ -1,0 +1,40 @@
+#summary 4th Email to Byrnie
+
+Morning (which I guess it will be when you read this)
+
+Been doing some more work on this (basically trying to get a workable ruleset together), however as is the way with this sort of thing other ideas have been popping up, and I was wondering if I could pass one by you, and see what you think.
+
+I've been thinking about an issue with Co-Op board games, namely that players tend to relinquish control to a team-based committee rather than play their own game. We saw it a lot with Doom/Descent, where one player (normally me I think) tended to come up with all the plans, and individual moves were more linked to the team strategy, rather than what the player themselves wanted to do. Ultimately the win condition for the game has to be for the team, not individual players.
+
+I've come up with a vague idea of "Player Goals" to try and give some individuality back to the player. ideally these would be linked into a more general campaign/XP system (current thinking is that players gain XP for killing "specials" (everyone gets XP, not just the killing blow person), and this XP can be spent in different ways;
+1) Team Upgrades, where everyone pays (improving weapon spawns, making items appear on tiles)
+2) Personal Upgrades
+
+The personal upgrades would take the form of a card which would have a condition/goal on it, which if met would give the player a victory point (which counts towards individual victory at the end of the game) and an upgraded ability. For example;
+----
+*Pistolier*
+
+Goal: Kill 2 special zombies, dealing the killing blow with a pistol
+
+Benefit: Play 1 extra attack card per turn with pistols
+----
+*Scientist*
+
+Goal: End your Movement in the same hex a special zombie died, and spend 2MP there to
+collect "samples". Collect 5 "samples".
+
+Benefit: Ignore 1 point of damage per turn from Special Zombies
+----
+
+You could have slightly "nastier" ones...
+----
+*Look Out for Number One*
+
+Goal: Cause 5 points of Friendly Fire on one other player
+
+Benefit: Gain +1MP
+----
+
+I'm not 100% sure about having direct conflict between the players (there is a fine line between co-op, and Zombies! or Tomb), but having more distractionary goals could give more individual control back to players, while maintaining the overall co-op gameplay.
+
+Is this a daft "it's midnight Pete, get some sleep" idea, or does it have any legs? Your opinion would be very much appreciated...

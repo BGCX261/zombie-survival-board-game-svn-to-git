@@ -1,0 +1,14 @@
+#summary Spending XP to improve Equipment
+
+_(for the record, I don't like this idea, and would prefer to include this as Player Upgrades)_
+
+Players may spend XP to improve the abilities of any weapon they carry
+ # Improved Rate of Fire (attack cards playable per turn)
+ # Improved Clip-Size (more cards in hand)
+ # Improved Damage (+_x_ damage per card played)
+ # Improved Range
+
+Non-weapon improvements
+ # Healthpacks heal more
+ # Explosives have bigger blast/can be thrown further
+ # Pills last longer

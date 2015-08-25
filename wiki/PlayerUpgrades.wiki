@@ -1,0 +1,6 @@
+#summary Spend XP to benefit individual players
+
+Players can spend XP individually to benefit their own character
+
+ # Buy a Player Upgrade card
+ # Pay to fully heal (end of map only)

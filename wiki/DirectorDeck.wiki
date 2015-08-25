@@ -1,0 +1,18 @@
+#summary Notes on design of Director Deck
+
+= Introduction =
+Current design on this page supports V0.2 of the Ruleset
+
+
+= Details =
+
+Card is drawn when;
+ * New Tile is placed
+ * Just before Zombie Spawning/Movement
+
+Notes on the card detail the number of zombies to spawn, and how many to move (spawning position and movement is only relevant for the "before Zombie Spawning/Movement draw")
+
+The card will have slightly differing spawn rules based on the [PlayerState player state], to allow for in-game balancing.
+
+==Card Layout==
+[http://zombie-survival-board-game.googlecode.com/files/Director%20Card%20Layout%20v01.jpg]

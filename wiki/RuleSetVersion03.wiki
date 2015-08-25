@@ -1,0 +1,117 @@
+#summary Third version of ruleset
+<wiki:toc max_depth="4" />
+= Ruleset V0.3 =
+
+==A. Phase Overview==
+
+ # Draw [DirectorDeck Director Deck] card(s)
+ # Suppressing Fire
+ # Resolve [DirectorDeck Director Deck] Cards
+  * Place surviving Zombies / Items
+  * Resolve Special Attacks
+ # Move Zombies
+ # Inflict Wounds
+  * Pin Players
+ # Player Movement/Actions
+  * Movement
+  * Reveal New Tiles
+  * Attacks
+  * Un-Pin Players
+  * Admin Phase
+
+
+==B. Phase Details==
+
+===1. Draw [DirectorDeck Director Deck] cards===
+Director Deck cards will display the following information;
+ # Card Description
+ # Horde Level (for Suppression check)
+ # Additional Events
+  * Special Attacks
+  * Items
+
+The number of cards drawn is based on;
+ * Difficulty level
+ * Tile Card rules
+ * other
+
+===2. Suppressing Fire===
+Once the Director Deck card is drawn, each player adds a single attack (unless Weapon rules specifically say they can add more) card to a central pile. These cards should be added face-down, and players may not say or show what card they are adding, and the cards should be shuffled before being revealed.
+
+===3. Resolve [DirectorDeck Director Deck] cards===
+*Resolve Suppression*
+
+Reveal and summate the attack cards the team have added, and compare this to the Horde Level on the [DirectorDeck Director Deck] card. For every point under the horde value the total value equals, place a single zombie on the board
+
+*Placing Zombies*
+
+New zombies are placed on the board on the tile
+_(need to add tile selection)_
+For each new zombie, roll a D6, and place the zombie on the hex relating to that number on the tile. If a hex is already taken, place the zombie in an adjacent space as close to the numbered hex as possible. All zombies are in a Active (standing) state.
+
+*Other Events*
+
+Next, check for any other special events on the card. These are often related to the level of success/failure of the Suppression check. 
+For Example;
+{{{
+A Director Deck card with a Horde Value of 10 is shown.
+It also notes that if the Suppression Check is 7 or less, a Hunter Special Attack will also occur.
+The players add in their attack cards, which are shuffled and revealed as 2, 2, 1, 1, totalling 6.
+4 zombies are placed on the board using a D6 to determine their location.
+Next, as the Suppression check was 7 or less, a Hunter Special Attack is triggered.
+}}}
+
+===4. Move Zombies===
+All active zombies (those standing up) are now moved _(decide on either static or D6 movement)_ hexes. They will always move directly towards the nearest player model, and in the case of a tie the most injured player is approached. Zombies will stop adjacent to a player.
+
+Once Zombies have moved, check to see if any Inactive zombies are triggered. If a character is adjacent to an inactive zombie, the zombie will become Active. they cannot move this turn.
+
+Note - Zombies can become active in the Resolve Director Deck cards phase, in which case they _would_ move in this phase.
+
+
+===5. Inflict Wounds===
+Each player with an adjacent Active zombie now takes a wound for each zombie.
+
+If a player is completely surrounded (i.e. 6 adjacent Active zombies), then they also become Pinned. Place the player model on it's side.
+
+If a player drops to 0HP (or less) then they become Pinned. Place the player model on it's side.
+
+At the end of this phase any zombies with a Stunned marker have that marker removed.
+
+===6. Player Movement / Actions===
+*Movement*
+
+Each un-pinned player may now, move, starting with the first player and moving clockwise. Each player can move _(decide on movement rate)_ hexes.
+
+A player may not move into the same hex as another player, or zombie model.
+
+If a player goes into a hex with an item, they may collect that item for free (if they have space to carry it). If the Item is a weapon they may immediately equip it (discarding the current weapon is nessacery). New weapons have a full ammo supply and full clip.
+
+If a player moves into a New Tile, and that tile has one or more Open Exit Points, then for each Open Exit Point draw a new Tile Card, and place a new Map Tile as per the cards specifications. Keep the Tile Card out and next to the tile, so that any special rules relating to that tile can be referred to.
+
+*Attacks*
+
+Each player (in turn) may now spend Attack cards from their hand to attack zombie models (or to assist players Pinned by Special Attacks). The number of cards they can play, and the range of the attack is determined by which weapon they are armed with.
+
+A Pinned player may only use a single pistol weapon. A player pinned by a Special Attack may use no attack cards.
+
+If a player uses one or more attack cards, and there is an inactive zombie (or zombies) within 5 spaces, it/they become Active immediately.
+
+Alternately, a player may perform one of the following actions instead of attacking;
+
+ # Reload - The player may return their hand of cars to their ammo deck, shuffle and re-draw a fresh new hand of cards (the hand size is determined by the weapon they are currently equipped with.
+ # Swap weapons - The player can change weapon to any other weapon they currently carry. When weapons are swapped, the hand of cards related to them stays with the weapon (place the un-used cards under the weapon card when placing it in front of you.
+ # Melee - Players can put 3 adjacent zombies into an Stunned status _(consider how to show stunned status here)_
+ # Use Item - A player may use a single item in their supply. If the item may be used on other players, the player must be adjacent.
+ # Revive - a player may revive an adjacent player who is Pinned, and on 0HP or less. Recover the Pinned player to 1HP. The player doing the reviving must have taken no damage from any source yet this turn.
+
+*Un-Pinning*
+
+All Pinned players may now check to see if they can become un-pinned. A player may become unpinned if;
+ # No adjacent Active Zombies
+ # No Special Attack Tokens in space
+ # Hit points above 0
+
+*Admin*
+
+Move the first Player token round 1 player clockwise

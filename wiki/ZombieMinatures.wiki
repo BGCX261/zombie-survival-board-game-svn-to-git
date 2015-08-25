@@ -1,0 +1,7 @@
+#summary Detail on Zombie Minatures
+
+= Zombie Models =
+
+Currently all used from the [http://www.boardgamegeek.com/boardgame/2471 Zombies] boardgame, which comes with 100 small-scale zombie minatures.
+
+http://images.boardgamegeek.com/images/pic465420_md.jpg

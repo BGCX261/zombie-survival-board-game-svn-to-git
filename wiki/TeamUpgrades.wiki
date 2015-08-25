@@ -1,0 +1,7 @@
+#summary Spending XP to benefit the entire team
+
+There are 2 ways that teams can spend XP to support everyone;
+ # Upgrading [TileDeck Tile Deck] cards
+ # Upgrading Weapon Spawns from basic to advanced weapons
+
+For these all players must spend the cost from their own XP (so if the players wish to upgrade a [TileDeck Tile Deck] card, they must all spend _x_ XP points).

@@ -1,0 +1,35 @@
+#summary Covers development of the board tiles for the game
+<wiki:toc max_depth="3" />
+= Introduction =
+
+One of the core design features of the game is a hex-based, set up in tiles which are also hexagonal.
+
+= Versions =
+
+===Version 1===
+Used for initial development and first play-test.
+http://zombie-survival-board-game.googlecode.com/files/hex_tile_v01.jpg
+
+Issues determined;
+ # Hard to cut out (jagged sides)
+ # Creating walls fiddly (used strips of dark paper)
+ # Hexes too small
+ # Hard to align
+----
+===Version 2===
+Used to support Ruleset V0.2
+
+http://zombie-survival-board-game.googlecode.com/files/tileimages.zip
+
+http://zombie-survival-board-game.googlecode.com/files/example_tile_layout_v02.jpg
+
+New features;
+ # Smoother sides and "half-hexes"
+ # Pre-determined walls
+ # Arrows to support on-the-fly board placement and routing
+ # Larger hexes
+ # Actual graphics
+
+Issues Determined;
+ # Need to add random location hexes for zombie/item spawning
+ # When printing, the background texture comes out too dark. Need a higher contrast.

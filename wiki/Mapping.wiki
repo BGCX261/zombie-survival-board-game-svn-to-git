@@ -1,0 +1,61 @@
+#summary Methods of building up the game map
+<wiki:toc max_depth="4" />
+
+= The Core Concept =
+
+The board should be built up as the players advance. The map is made up of hexagonal tiles, representing a main route, with some turning offs.
+
+Assuming each tile has 2 entry/exit points, there are 5 base tile shapes, which can be identified by placing one entry/exit straight down, and counting round clockwise to the single exit point.
+
+ * 1 side (sharp left turn)
+ * 2 sides (gentle left turn)
+ * 3 sides (straight ahead)
+ * 4 sides (gentle right turn)
+ * 5 sides (sharp right turn)
+
+On top of these base tiles would be "split" tiles, with 2 primary entry/exit points, and 1 or more secondary routes leading to short routes.
+
+== Issues ==
+If the board is fully random, then there is a good chance that the map will fold back over itself, forcing a tile to be placed over a currently placed tile. The fastest way this could happen is with 2 sharp left (or right) tiles sequentially. This is compunded once branch routes are added in. The computer games does not have these issues, as the map is pre-defined, and loop-backs can be dealt with by adding in a Z-axis.
+
+== Possible Solutions ==
+
+=== 3D Board Game ===
+Tiles that are laid on top of previous ones are "elevated", allowing multi-level play. Would require some type of bracing, and steps for ups and downs
+==== Pros ====
+ * Visually pretty good
+ * Requires no splitting rules
+==== Cons ====
+ * Complete nightmare to produce
+ * Potentially multiple elevated sections
+
+=== Walkways ===
+When an overlap is forced, a walkway is added into the map, extending the map to the nearest empty space.
+==== Pros ====
+ * Fairly simple to implement
+ * Requires minimal splitting rules
+==== Cons ====
+ * Still issue with bridging large blocks
+
+=== Fog of War ===
+Once players have left a section it is removed, allowing clearance of the table for future sections
+==== Pros ====
+ * Clears table space, keeps team together
+ * Consistent rules approach
+==== Cons ====
+ * Split team could cause trouble
+ * Length would have to be 3 to remove all issues (probably)
+
+==Chosen Solution==
+  # Some Fog of War. In the admin phase any tiles where there are no players (and adjacent tiles also have no players) are removed from the table
+  # Virtual Z-Axis. Where a collision is caused, a special marker will be put down, linking to another tile which can be set up separately. This will represent the characters moving up/down ladders, or going into sewer systems to pass an blocked route.
+
+So, for example;
+
+<img src="http://img251.imageshack.us/img251/7672/tilecollision01.jpg"/>
+
+Placement of Tile 3 here has caused a dead-end, as the exit goes into the side of Tile 1
+
+<img src="http://img231.imageshack.us/img231/2488/tilecollision02.jpg"/>
+
+A z-axis exit is placed, and a new tile is drawn and setup away from the current section. Characters can move between the 2 tiles via the marked hex by expending movement points.

@@ -1,0 +1,11 @@
+#summary Detail on Player Minatures
+
+= Player Models =
+
+Currently using the player models from the [http://www.boardgamegeek.com/boardgame/2471 Zombies] game. These are 6 individually coloured human models with shotguns.
+
+http://images.boardgamegeek.com/images/pic6348_md.jpg
+
+
+Issue;
+ * May need to make facing more obvious. The simplest solution would be the addition of a hexagonal base

@@ -1,0 +1,142 @@
+#summary Basic Computer Game info
+<wiki:toc max_depth="4" />
+
+= Introduction =
+
+Left4Dead is a Co-operative multiplayer computer game, where 4 players battle through areas populated with "mutants" and Special mutants in order to reach safety.
+
+http://www.l4d.com/
+
+This game was the original inspiration for this board-game project.
+
+=Game Engine Statistics=
+
+==Infected Statistics==
+
+ * *Normal Infecteds* (25/50/75/100 Health, 50 in Versus)
+  * Hunting Rifle: Everywhere: Instant Death
+  * Pistols, Uzi, M16 & Shotguns:
+   * Head: Instant Death
+   * Other: 100% Damage
+----
+ * *Boomers* (50 Health)
+ * *Hunters* (250 Health)
+ * *Smokers* (250 Health)
+  * Head:
+   * Shotguns: 125% Damage
+   * Others: 400% Damage
+    * Torso: 125% Damage
+    * Arms: 100% Damage
+    * Legs: 75% Damage
+----
+ * *Tanks* (3000/4000/8000/8000 Health, 6000 in Versus)
+  * Everywhere: 100% Damage
+----
+ * *Witches* (1000 Health)
+  * Pistols, Uzi, M16:
+   * Head: 100% Damage
+   * Other: 50% Damage
+  * Hunting Rifle:
+   * Everywhere: 100% Damage
+   * Head: Stunned for 2 or 4 seconds if shot while crying.
+  * Shotguns:
+   * Head: 200% Damage
+   * Other: 100% Damage
+   * Point Blank: x2.5 Damage
+----
+ * *Melee Attacks*
+  * Boomer: 2 Damage (1s/hit, 2 DPS) (Area of Effect)
+  * Hunter: 10 Damage (1s/hit, 10 DPS) (Area of Effect)
+  * Smoker: 2 Damage (1s/hit, 2 DPS) (Area of Effect)
+  * Tank: 24 Damage (2s/hit, 12 DPS)
+----
+ * *Special Attacks*
+  * Leap: Up to 25 Damage (Area of Effect Stun)
+  * Pounce: 5 Damage/Hit (0.55s/hit, 9.1 DPS)
+  * Pounce on Fire: +10 DPS
+  * Tongue: 5 Damage/Hit (1.1s/hit, 4.55 DPS)
+  * Rock Throw: 24 Damage (2s/throw, 4s recharge, 4 DPS) (Area of Effect)
+----
+ * *Delays*
+  * Vomit: 30s recharge
+  * Leap: 1s buildup
+  * Tongue Miss: 3s recharge
+  * Tongue Break: 15s recharge
+
+==Weapon Statistics==
+
+ * Pistols
+  * Damage:
+   * Point Blank: 35 Damage
+   * Smoker Range: 22 Damage (100 ft)
+   * Long Range: 13 Damage
+  * Friendly Fire: 0/1/6/35 Damage, 1 in Versus
+  * Penetration:
+   * Walls: Normal (1 feet)
+   * Infecteds: Normal (2/bullet)
+  * Single Pistol:
+   * Rate of Fire: 300 rounds/min (3s per clip)
+   * Reload: 2s
+   * DPS: 175 damage/s, 105 sustained
+  * Dual Pistols:
+   * Rate of Fire: 600 rounds/min (3s per clip)
+   * Reload: 2.8s
+   * DPS: 350 damage/s, 181 sustained
+----
+ * Uzi
+  * Damage:
+   * Point Blank: 19 Damage
+   * Smoker Range: 15 Damage (100 ft)
+   * Long Range: 11 Damage
+  * Friendly Fire: 0/1/3/19 Damage, 1 in Versus
+  * Penetration:
+   * Walls: Normal (1 feet)
+   * Infecteds: Normal (2/bullet)
+  * Rate of Fire: 1000 rounds/min (3s per clip)
+  * Reload: 2.4s
+  * DPS: 317 damage/s, 176 sustained
+----
+ * M16
+  * Damage:
+   * Point Blank: 32 Damage
+   * Smoker Range: 31 Damage (100 ft)
+   * Long Range: 29 Damage
+  * Friendly Fire: 0/1/5/32 Damage, 1 in Versus
+  * Penetration:
+   * Walls: Extra (1.5 feet)
+   * Infecteds: Normal (2/bullet)
+  * Rate of fire: 700 rounds/min (4.3s per clip)
+  * Reload: 1.8s
+  * DPS: 373 damage/s, 262 sustained
+----
+ * Hunting Rifle
+  * Damage:
+   * All Ranges: 90 Damage
+   * Normal Infecteds: Everywhere: Instant Death
+  * Friendly Fire: 0/3/15/90 Damage, 3 in Versus
+  * Penetration:
+   * Walls: Extra (1.5 feet)
+   * Infecteds: Infinite
+  * Rate of fire: 225 rounds/min (4s per clip)
+  * Reload: 3s
+  * DPS: 338 damage/s, 193 sustained
+----
+ * Pump-Shotgun (10 pellets per shot)
+ * Auto-Shotgun (12 pellets per shot)
+  * Damage: (per pellet)
+   * Point Blank: 24 Damage
+   * Smoker Range: 14 Damage (100 ft)
+   * Long Range: 7 Damage
+   * Headshots: No extra damage (except for Witches)
+  * Friendly Fire: (per pellet) 0/1/4/24 Damage, 1 in Versus
+  * Penetration:
+   * Walls: Normal (1 feet)
+   * Infecteds: Infinite
+  * Pump-Shotgun:
+   * Rate of fire: 69 shots/min (7s per clip)
+   * Reload: 0.5s/shell & +1s when empty
+   * DPS: 274 damage/s, 175 sustained
+  * Auto-Shotgun:
+   * Rate of fire: 200 shots/min (3s per clip)
+   * Reload: 0.4s/shell & +1s when empty
+   * DPS: 960 damage/s, 411 sustained

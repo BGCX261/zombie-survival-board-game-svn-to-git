@@ -1,0 +1,208 @@
+#summary Annotated flowcharts to run through the core gamplay
+<wiki:toc max_depth="4" />
+=Gliffy Working Model=
+_thumbnail of working model in Gliffy_
+<img src="http://www.gliffy.com/pubdoc/2030125/M.png"/>>
+
+=Director Phase=
+==Graphical View==
+http://zombie-survival-board-game.googlecode.com/files/Director%20Phase%20Flow.png
+==Step instructions==
+===Draw Director Cards===
+The [FirstPlayer First Player] rolls a D3 to determine the number of [DirectorCard Director Cards] to draw. Then check the [TileCard Tile Card] that the First Player is currently standing on for any modifers. Also check for any special circumstances that may alter the number of cards drawn.
+
+Once the cards are drawn, add any Lurking cards from the previous round to the hand.
+
+The Director cards contain the following information;
+ # Name
+ # Description
+ # Horde Number
+ # Special Conditions and attacks
+
+
+===Add [SupressingFire Suppressing Fire]===
+Suppressing Fire represents the players holding back general threats in the area. To do this they expend [AttackCard Attack Cards] to try and beat the combined value of the [DirectorCard Director Cards] Horde Numbers.
+
+Each player, starting with the [FirstPlayer first player], adds a single [AttackCard Attack Card] (or more if their currently equipped weapon allows) face-down into a pile. No player should show or say what value card(s) they are adding. 
+
+Players may choose to add no cards, either voluntarily, or if they have no ammo, or are using a weapon that does not allow Suppressing Fire. A player who is [Pinned Pinned] by a [SpecialAttack Special Attack] may add no cards to Suppressing Fire. A player who is pinned for other reasons may only ever add a single card, irrespective of any other equipment/rules that state he may add more.
+
+===Resolve [SupressingFire Suppressing Fire]===
+Once all players have added cards into Suppressing Fire, or opted not to, the first player take all the [AttackCard Attack Cards], shuffles them, and then turns them over to add them up to determine the total value of the teams Suppressing fire for that round.
+
+This is compared first to the total Horde Value of the [DirectorCard Director Cards] drawn this turn. If the total value of Suppressing Fire is less than the total Horde Value, the difference is the number of zombies that will appear on the game board this turn
+
+===Placing New Zombies===
+Zombies will always appear nearest the weakest player, unless otherwise specified on the Director Card (or if there are any Tile-Based cards that change zombie placement). for each zombie to be placed on the gameboard, roll a D6, and then place the zombie on the hex relating to that number on the tile the player with least [HitPoints hit points]. If players are tied on Hit Points, then use the player who was most recently [FirstPlayer first player]
+
+If more than one zombie is due to appear on the same hex space, place the 2nd zombie on an adjacent hex. The first player decides which hex this should be.
+
+===Check Special Conditions===
+Some [DirectorCard Director Cards] have special conditions on them, based on the result of the [SuppressingFire Suppressing Fire] check.
+
+Some cards will be triggered if a Suppressing Fire Check is failed by a certain amount. Some other cards have additional rules if the Suppression Check is not _beaten_ by a certain amount. Typically these cards will "Lurk", and be placed into teh next Director Phase as additional cards.
+
+*Example*
+{{{
+A Card has 2 conditions;
+1. If the Suppression Check is failed by more than 1, a Smoker Special Attack occurs
+2. If the Suppression Check is not passed by more than 3, this card Lurks until next turn.
+}}}
+
+In this case if the Suppression check fails by more than 1 a Smoker Attack will occur, if the Suppression Check Passes by 3, 2, 1 or zero, or fails by 1 the card Lurks. Only one condition will ever trigger for a given card.
+
+===Place Lurkers Aside===
+Director Cards that are lurking should be put to one side for teh reaminder of this round, and added the cards drawn in the next Director phase.
+
+===Smoker Special Attack===
+tbc
+
+move player to tile edge in random direction. Pinned with token and damage per turn
+
+===Hunter Special Attack===
+tbc
+
+player Pinned with token in current location and damage+ per turn
+
+===Boomer Special Attack===
+tbc
+
+player+nearby players slimed (draw blind on Suppressing Fire and Attacks), spawn single new zombie with token (causes adjacent to be slimed on death)
+
+===Jockey Special Attack===
+tbc
+
+move player in random directions in player turn. not pinned but cannot fire. damage per turn.
+
+===Charger Special Attack===
+tbc
+
+move player to tile edge in random direction. Pinned with token and damage per turn. Intervening players in line are Pinned
+
+===Spitter Special Attack===
+tbc
+
+Area damage for _x_ turns.
+
+=Zombie Phase=
+==Graphical View==
+http://zombie-survival-board-game.googlecode.com/files/Zombie%20Phase%20Flow.png
+===Move Zombies===
+All Active Zombie models (without a Stun Marker) on the board should now move _X_ hexes towards the nearest player model. If 2 or more player models are at an equal distance then the zombie should move towards the player with least hit points remaining. If this is tied then the player who has most recently been first player should be the target. The zombies should always take the shortest possible path towards the player model, and should always move their full distance (until they reach an adjacent hex to a player model)
+
+Zombies *will* approach and attack a player on less than 0HP.
+
+Zombies may move through hexes occupied by other zombies, but may not finish moving in them. Zombies may not enter, or pass through the same hex as a player model. Zombies do not trigger any special effects in hexes.
+
+===Activate Inactive Zombies===
+If there are any Inactive zombies adjacent to a player model these now become active. Place the models on their feet. They may not move this turn, but can attack.
+
+===Wound Players Adjacent to Zombies===
+For every adjacent zombie (without a Stun Marker) to a player model, that player now take 1HP of damage.
+
+===Pin Players===
+If the zombie attacks reduce a player to 0HP or less, then the player becomes pinned. Place the model on it's side.
+
+If a player is completely surrounded by zombies (i.e. all 6 adjacent hexes are occupied with a zombie) then the player is dragged to the ground, and becomes pinned (place the model on it's side)
+
+===Remove Zombie Stun Markers===
+Any zombies that have a Stun marker can now have that marker removed.
+
+
+=Player Phase=
+==Graphical View==
+http://zombie-survival-board-game.googlecode.com/files/Player%20Phase%20Flow.png
+
+===Move Un-Pinned Players===
+Starting with the first player, each Unpinned player model can now move _Y_ hexes. Players may not move through hexes occupied by zombies, or other players. If a player moves into a hex where a special rule applies, that rule should be resolved immediately before finishing the players movement.
+
+====Pick Up Items====
+If a player moves over a hex containing an item, they immediately pick it up and place it in their inventory. If there is no space in their inventory for that item type they may chose to;
+  # Leave the Item on the floor
+  # Place the Item in the inventory, and discard an Item to make space for it (which will be placed on the floor)
+
+If the Item is equippable (e.g. Guns, Med kits) the player may shooce to immediately take that weapon into hand.
+
+If a new gun is picked up, the player should prepare a new Ammo Stack. To do this discard all their current Attack Cards (discarded and spare) for that weapon (except those in hand) and replace them with a new stack equal to the Weapons Max Ammo.
+
+If a player walks over an ammo restock then this should be done for all weapons currently carried.
+
+Some Items must be kept in hand (e.g. Petrol Cans, Gas Cylinders). If a player moves into a Hex with one of these items they do not have to pick it up, however if they do it must immediately be placed in hand (currently held items go into the Inventory)
+
+All players move before continuing with other actions
+
+===New Tile Required?===
+If, at any point in their movement, a player moves onto a Tile with one or more Open Exits (where a tile exit pint does not have a tile placed) a new tile should be placed.
+
+====Place New Tile====
+A new tile should be placed. Take the top tile from the face-down stack, and place it against the edge so that the entry point aligns with the current exit point. Do this for each and every exit. 
+
+====Draw Tile Card====
+For each tile placed, draw a Tile Card. This card will detail any special rules relating to the new area, as well as specifying any initial zombies/hazards. If a Tile Card specifies an ongoing effect for a tile, keep the card out, and place it next to/near the tile it relates to.
+
+The Tile should immediately have any initial items/zombies/other placed on it.
+
+====Blocked Exits====
+Sometimes it may be that a route is placed to that the exit from a tile goes into a previously laid tile, blocking the ongoing route. If this happens, then the route will clamber over/under the previous route.
+
+Place a Ladder/Sewer Hex on the Exit point of the tile. Once the players enter the Tile (triggered a New Tile Required) then draw a new tile as normal, but place it away from the current Map, and place the other end of the Ladder/Sewer on the Tile Entrance. Players may move between these 2 tiles by moving onto the Ladder/Sewer Hex and spending _Z_ movement points. If the players does not have enough movement points left to reach the other end, they stop on the entrance (thus blocking the route for the other players!)
+
+===Actons===
+
+Each player may now take a single Action, starting with the first player.
+
+A Pinned player may only make an Shooting Action or a Reload Action, and only using a single pistol.
+
+====Shooting (Attack Cards)====
+The player may expend a number of attack cards from their current hand (upto the limit of their equipped gun) to kill zombies on the board.
+Each card kills 1 zombie (irrespective of the value of it). 
+The range of each shot is determined my multiplying the value of the Attack Card by the Range of the gun (so if an Attack Card of 2 is played, and a Gun has a range of 2, the shot can be upto (2x2) 4 hexes from the player).
+When determining range, count the shortest route to the target zombie. You may not shoot through other zombies. You may shoot through other players, however this will automatically cause 1 wound to the player (unless they are Pinned, in which case they are pre-ducked)
+Resolve each played attack card from a player separately (so a player may shoot one zombie, removing it from the board, and then shoot another one behind it)
+If a "Miss" card is played, no other cards may be played by that player that round (so only a single Miss card can be played). In addition, if there is an adjacent player model to the player, they take 1HP damage due to the wild firing.
+Some weapons will have special rules, which will be detailed on their card.
+
+====Reload====
+A player may reload their currently equipped gun. They discard their current hand of cards, and draw a new hand with a size equal to the "Clip Size" of the gun.
+
+====Swap Weapons====
+The player may swap their currently in-hand weapon to any other item in their inventory.
+
+
+====Melee Attack====
+The player can swing the butt of their weapon, knocking zombies back.
+
+This allows the player to strike upto 2 adjacent zombies (who must be adjacent to each other and to the player). The zombies are moved 1 hex away from the player, and each gain a Stun Marker.
+
+====Use Item====
+The player may use any in-hand item (e.g. Med Kit, Pills, Pipe Bomb, Molotov). Unless otherwise noted, each item is one-use only, and should be discarded after use.
+
+Items (if applicable) can be used on an adjacent player model.
+
+====Revive Player====
+A player may revive an adjacent player on 0HP or less. The player may only do this if they took no damage from any source this round, and there are no adjacent zombies to them.
+
+A revived player has their Hit Points reset to 1, though will still be pinned.
+
+===Check to Un-Pin Players===
+A Pinned player may become un-Pinned if all the following criteria are met;
+  # Hit Points are greater than 0
+  # No adjacent zombies
+
+If a Player can become Un-Pinned they are placed back on their feet in their current hex.
+
+=Admin Phase=
+==Graphical View==
+http://zombie-survival-board-game.googlecode.com/files/Admin%20Phase%20Flow.png
+
+===Remove Vacated Tiles===
+Once all the players have left a tile it should be removed from the board (there is no going back!). 
+
+Tiles are removed in the following circumstances;
+  * Tile has no players on it, or any adjacent tile
+  * All players have passed through a Sewer/Ladder, leaving a full section of the board
+
+If there was a branch on the route, tiles are only removed as players progress along the main route, not along the branch.
+
+===Move the First Player token===
+The First Player token moves round the table clockwise by 1 player.

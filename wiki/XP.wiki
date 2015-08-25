@@ -1,0 +1,9 @@
+#summary Gaining Player Experience
+
+Players can gain experience in one of 3 ways;
+ # Killing a Special Zombie
+ # Completing a Tile Scenario
+ # Surviving a Zombie Swarm
+ # Revealing Tile? (possibly too easy)
+
+Experience should be given to all players, irrespective of who dealt killing blow/completed action etc.

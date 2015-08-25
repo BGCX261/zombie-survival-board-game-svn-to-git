@@ -1,0 +1,22 @@
+#summary List of required materials for game, with links to development/artwork
+
+= Introduction =
+
+Alongside the ruleset (and to some extent defined by them) will be the actual playing pieces, board areas, cards and tokens. This section covers their deveopment, with links to files/design ideas.
+
+This area will be updated to match the currently live ruleset.
+
+= Game Contents =
+
+ * [BoardTiles Board Tiles]
+ * [ZombieMinatures Zombie Minatures]
+ * [PlayerMinatures Player Minatures]
+ * [DirectorDeck Director Deck]
+ * [AttackDeck Attack Deck]
+ * [PlayerUpgrades Player Upgrades]
+ * [TileDeck Tile Deck]
+ * Player Status Mat
+ * Zombie Status Mat
+ * Rulebook
+ * Play aids
+ 

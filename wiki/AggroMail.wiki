@@ -1,0 +1,10 @@
+#summary Log of email conversations with Aggro, linking to full email text
+= Introduction =
+
+Emails are listed below, with no real heading for now, as they cover core concepts. These will form part of the ruleset(s), and consist of idea bouncing and blue-skying mechanics
+
+
+= Email Index =
+
+ * Email 1 - Aggro to Me AggroMail001
+ * Email 2 - Me to Aggro AggroMail002

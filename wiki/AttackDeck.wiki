@@ -1,0 +1,26 @@
+#summary Design and composition of the Attack Deck
+
+_This currently supports [RuleSetVersion02 Version 0.2] of the ruleset_
+
+=Design Notes=
+Card distribution is based about a D8 distribution. For Attack Dice this would change to a D6 distribution, with the removal of 6 x Controlled Fire, and 6 x Suppressing Fire
+
+=Card Layout=
+_(Layout graphic to be added)_
+
+ # Card Name and Number (for ID purposes)
+ # Card Type
+ # Damage to normal zombies
+ # Damge to [SpecialZombies Special Zombies]
+ # Does card cause Friendly Fire?
+
+=Versions=
+==[AttackDeck01 Version 1]==
+ * 8 cards, 5 of each. Based on D8 distribution.
+ * Average card damage = 1.75
+===Issues===
+ * Struggles with negative value weapons
+
+==[AttackDeck02 Version 2]==
+ * 10 cards, 5 of each. Based on D10 distribution.
+ * Average card damage = 2

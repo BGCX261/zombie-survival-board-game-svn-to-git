@@ -1,0 +1,97 @@
+#summary Thoughts on how to implement special zombies
+<wiki:toc max_depth="4" />
+
+= Introduction =
+Ideas on how to implement Special Zombies into the core ruleset.
+The special zombies should provide the actual challenge of the game, and should be tough enough to make the players react and co-ordinate as a team to overcome them. In the game Left4Dead their attack mechanisms re-inforced the co-operative gameplay, by forcing players to resuce their team-mates
+
+=Challenges=
+==Spawning==
+===The Spawn Track===
+Use a [SpawnTrack Spawn Track] to time their entry. This contorls both the maximum number of Specials appearing at one time (limited by the number of spawn tracks in use), and also ensures a peak/trough challenge setting.
+
+Currently I see Hunter / Smoker / Boomer type specials using this. There may need to be a spawning queue to determine the next one to be moved to the spawn tracks.
+
+===Would this work for Tanks / Witches?===
+Probably not. I see these working better if linked to specific tile (especially the witch, who should appear on tiles, and so should be an item on the [TileDeck Tile Deck] cards.
+
+The tank is a little trickier. For the normal game you want them to appear infrequently (1-2 times per level), however during crescendo events/finales you would want them on a more time-based system. Possibly a longer spawn track for them, or advancement based on the types of tile being drawn (a marker on the [TileDeck Tile Deck] cards ala BSG Jump markers? or the [DirectorDeck Director Deck]...so if a team is doing really well, advance the Tank spawn? )
+
+===Spawn Positioning===
+Currently using the normal zombie spawn rules (random position on tile, tile determined by [DirectorDeck Director Deck] card in combination with [PlayerState Player State]. 
+
+Specific types of Special would benefit from other locations...for example ranged-type attacks (Smokers) would be better off beind the team, while Boomers and Hunters would want to be closer. There is a possibility that Specials have their own spawning rules...
+
+==Special Powers==
+===Sub-Dividing the Specials===
+In Left4Dead there are effectively 2 types of Special.
+ * Boomers, Hunters and Smokers are always available
+ * Tanks are brought out for special events
+ * Witches are more of an obstacle, and not "intelligent" as such
+
+(OK, that's 3 types, however I consider Tanks and Wiches to be non-standard Specials).
+
+===Spawning and Special Powers===
+To go through the Standard Specials first, their spawn rules could be linked to their power, ala;
+ * Smoker. Spawns on the tile behind the player furthest back. Roll a random hex to appear (numbers on tiles)
+ * Hunter. Spawns on same tile as current Highest Priority player. Roll a random hex to appear.
+ * Boomer. Spawns on same tile as furthest forward player. Rolls a random hex to appear.
+
+This remains fairly simple, and similar in line to normal zombie spawning, while giving the specials a better opportunity of using their powers correctly.
+
+Witches would have to spawn as a new tile is placed, however that works pretty nicely. She could perhaps have a spawn-tracker that is incremented as a new tile is placed?
+
+Tanks should spawn ahead of, or behind the team, to give them some warning. I quite like the idea of them punching through a wall (which marries in with the idea of "cupboard" board sections, which are currently in my mind, but not in the rules).
+
+===Special Powers===
+====Smoker====
+ * Move 4 (no facing)
+ * Range Attack - LOS (unlimited hexes) (recharge?)
+ * Melee Attack to adjacent/pinned
+ * Post range attack move pinned player _x_ hexes towards Smoker each turn (fast)
+ * 3-5 wounds
+
+Move Rules - Move to first place with LOS on rear-most player. Range attack and pin.
+----
+====Hunter====
+ * move 6 + leap (no facing)
+ * Leap +4 hexes in straight line
+ * Melee attack to adjacent/pinned
+ * 3-5 wounds
+
+Move Rules - Attack Highest Priority player
+(would they be better off ganking the rearmost as well?)
+----
+====Boomer====
+ * Move 3 (no facing)
+ * Range attack - arc to 3 hexes (long recharge)
+ * increases Priority / random fire arc OR random card draw
+ * increase normal spawning
+ * 2-3 Wounds
+ * Explode when killed (adjacent to adjacent +1 as per Ranged attack)
+
+Move Rules - Move to attack range of closest player and goop, then move into adjacent range and melee.
+----
+====Tank====
+ * Move 5 (no facing)
+ * Range Attack - range 8 to highest priority target
+ * Melee Attack to adjacent + knockback
+ * 10-15 wounds
+ * Immune to Player melee knockback
+
+Move Rules - head towards highest priority player and melee, range if out of reach.
+----
+====Witch====
+ * Move 0 / 10 (no facing)
+ * Melee only - immediate knockdown
+ * 8-10 wounds
+ * Stationary until disturbed
+
+Move Rules - Stationary until disturbed;
+ # In area of Friendly Fire
+ # Takes damage in player turn
+ # Attack card played while adjacent
+ # Adjacent Players for 2 turns
+
+...then move towards Triggering player, melee when in range.
+----

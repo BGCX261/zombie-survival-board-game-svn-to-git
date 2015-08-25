@@ -1,0 +1,14 @@
+#summary Development of the core game mechanisms, independant of final theme
+
+ * [Ruleset Ruleset Development] - Versions of beta rules
+
+= Phase 1 - Initial Concept Development =
+Consists of initial thoughts, and discussion/blueskying to decide on basic mechanisms. Also sometimes expands to come up with potential ideas for later development.
+
+ * [Inspirations] - List of Media with inspirational themes
+ * ByrnieMail - log of idea-bouncing with Byrnie
+ * AggroMail - log of idea-bouncing with Aggro
+ * [SpecialZombies Special Zombies] - how to add Special Zombies into the game
+ * [WeaponDesign Weapon Design] - determiing weapon statistics and rules
+ * [CoopGameplay Co-Operative Gameplay] - how to support 4 players rather than 1 team
+ * [Mapping] - Building a map without a "map" or collisions

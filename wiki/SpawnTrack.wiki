@@ -1,0 +1,10 @@
+#summary Spawn Track to control appearance of Special Zombies
+
+Currently supporting V0.2 of the ruleset
+
+When a special zombie is killed, it is put aside. DUring the next turn any empty track on the Spawn Track have a zombie placed at the start (high number, actual location based on game difficulty), and in subsequent turns it moves down until it reaches the "Spawn" point, at which point it is transferred back to the game board...
+
+http://zombie-survival-board-game.googlecode.com/files/spawn_track_v01.jpg
+
+===Issues===
+ * I'm a muppet, and put the settings the wrong way round. As this is Easy makes the [SpecialZombies Special Zombies] respawn faster!

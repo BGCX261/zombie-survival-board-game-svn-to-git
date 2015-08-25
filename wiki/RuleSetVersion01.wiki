@@ -1,0 +1,147 @@
+#summary First ruleset version
+
+<wiki:toc max_depth="4" />
+
+==Ruleset V01==
+===(1) Random board game===
+place hexagonal tiles (random exit point(s))
+How do you deal with splits in the path?
+How do you determine length (overall, and per split)?
+
+===(2) Random "features" per tile as exposed, drawn from deck===
+Will need feature card sections to support cards (Director Deck)
+Also determines spawns for specials
+
+===(3) Player base movement will be set, with modifiers===
+
+    * Adjacent enemy : -1 movement (base move of 6, so surrounded character is by default stationary)
+    * Can sacrifice movement points for additional accuracy/damage/range?
+    * Move sideways at same speed, backwards at double cost.
+    * Do you use a facing rule? Suggest free re-facing before firing, 1mp per turn after first attack card played
+    * I cannot see how special zombies would work without facings...
+    * 1mp to swap between crouch and standing
+
+
+===(4) Combat vs normal enemy (the masses)===
+Done via attack cards.
+Attack card - kills x enemies from a given arc (front to back)
+
+Alternately each "reload" gives a hand of attack cards, which can be played as normal, and a reload action is in lieu of attacks for that go, and discards/redeals hand from gun deck.
+
+How do you run out of ammo? (1 deck of cards, when expired out of ammo, picking up ammo/gun re-shuffles and restarts the deck?)
+How many cards in deck/what mixture?
+How to deal with pistol/unlimited ammo? (single shot in lieu of card-based attacks?) (single dice roll? twin weilding = 2 dice?)
+Melee attack instead of gun attack, push back all zombies in facing
+
+===(5) Combat vs Specials===
+Each attack card also has a damage score for vs specials, can be used if LOS and range for weapon
+Special damage used in lieu of masses attack. If a special has a player pinned (smoker/hunter) an attack card will unpin (can cause damage to player)
+
+===(6) Specials rules===
+a) Smokers - spawn out of LOS, ranged attack to drag/immobilise/damage. Mid HP
+b) Hunter - spawn out of LOS, fast move and ranged-to-melee attack, pin and damage. Mid HP
+c) Boomer - spawn out of LOS, slow movement, blast attack + blast death (2 hexes), causes zombie spawn rush. Low HP
+d) Tank - spawn out of LOS (Director Deck driven only). Punch and throw...high damage. V-High HP
+e) Witch - spawn on tile (Director Deck driven only). Trigger and attack. High HP
+
+===(7) Guns===
+
+    * Pistol - hand of 3 (dual = 5). Play per turn = max 1. Dam -1 (min 1). Range 8
+    * Shotgun - hand of 3. Play per turn = 1. +2 kills/wider arc. Range 3
+    * SMG - hand of 8.Play per turn = all. Range 4
+    * Auto-shotgun - Hand of 4. Play per turn = all. +2 kills/wider arc per card. Range 3
+    * Sniper rifle - hand of 3. Play per turn = 1. Special = kills all in line of arc. Range unlimited
+    * Assault rifle - hand of 8. Play per turn = all. Range 6
+
+
+===(8) Zombie movement/game phasing/attacking===
+players will need the ability to interrupt zombie movement (play attack card at any time)
+zombie movement should be fast
+Director deck determines how many can move/spawn/speed
+
+    * player go
+    *     free movement (do not pay for turns)
+    *     attack phase (play attack cards + mp per turn + mp per hex) or Reload (empty hand) or Heal (pickup card, no attacks that round) (Tablets cost x mp, do not stop attacks)
+    * Director Deck draw / spawning
+    * mass zombie move (play attack card at modifier + mp per turn. No move)
+    * mass zombie damage (1 per adjacent, no move/attack here)
+    * special zombie move (play attack card at modifier + mp per turn. No move)
+    * special zombie attack (no move/attack here)
+ 
+
+    * Special phase - reveal - if player moves to point where next tile is to be revealed then place and draw director deck. Can happen in free move or attack phase
+    * Need card hand rules for Swap Weapon
+
+
+====Normal Zombie Movement====
+number of zombies as determined on the Director Card for turn move towards highest priority target.
+Priority 1 - vomited hero (if multiple closest one). Move to adjacent to target
+Priority 2 - pipebomb. Move to on top of or adjacent
+Priority 3 - hero with most adjacent zombies already (if tie then closest to closest)
+Priority 4 - closest hero
+
+Speed - do they move until they reach, or max number of hexes (6-8)?
+
+====Special Zombie Spawn / movement====
+Hunter - closest spawn available > 3 hexes. Can move 3 normal + single 5 hex leap (straight line). Free attack on first enemy in line of leap
+Smoker - Closest spawn > 6 hexes. Move 4 + tongue attack (LOS, straight line)
+Boomer - Closest spawn > 2 hexes. Move 3 + vomit attack (long recharge)
+(all have normal adjacent attack in lieu of normal, causing 1 damage point)
+
+Witch - if disturbed immediate free move to startling enemy (max 10 hexes). Spawns with tile
+Disturbed if
+a) damaged
+b) adjacent + 1 other (shoot, full move etc etc)
+c) 2 people adjacent
+
+Tank - moves towards closest or weakest. Move of 5. Spawns with tile (side room)
+Throw Rock (delayed)
+Punch (+knockback)
+
+===(9) Spawn pool===
+
+Each Director Deck specifies a spawn rate. There should be a special zombie spawn pool for each player. Once a special is killed it will be x turns before it respawns. When a Director Card is drawn spawn pools move forward 1, and any available are placed out of LOS (either generic "close as possible" rules, or as per OL decision)
+
+    * New Area spawns may specify either a Witch or Tank. There will be a final section where tanks appear at set intervals (here tanks would effectively be the game timer). DD also determines horde rushes, either as part of a new area, or as a spawn. DD therefore needs the following info
+    * New area description (tiles, items etc etc)
+    * Special spawn increment
+    * Exceptional spawns (horde, tank, witch...limited per deck cycle). These would also apply to new areas
+    * Normal Zombie move volumes
+
+
+Some new areas should be set holdout events (such as a gun turret + phased spawns).
+
+===(10) Items available===
+
+    * Healing Pack - 1 per player. Instead of all attacks may heal (or heal adjacent). Any damage dealt stops heal.
+    * Pills - 1 per player. Instead of moving 2 spaces may take
+    * Explosives - 1 per player. Need to re-equip to it (2 mp) and throw (free action in straight line from model)
+    * Carried Item - cannot have weapon. 1mp to pick up, free action to throw in straight line
+    * weapons - 2mp to pick up, free redraw of cards
+    * (2nd pistol) - draw +2 cards first time.
+
+
+===(11) Campaign Basics===
+
+Ways to advance players
+Hand size per gun (increased magazine)
+Increased health
+Increased movement
+
+
+Ways to advance zombies
+Shorter respawn counters
+more damage per specials
++mob movement
++volumes spawn
+Reduce pickups
+
+There should be a flag on the Director Deck to compare player state and modify values based on that therein.
+Player state =
+Combined health
+Combined pickups (value per, or per card?)
+
+Zombie score = no of player deaths
+
+
+

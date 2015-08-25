@@ -1,0 +1,12 @@
+#summary Allowing for player development and difficulty scaling
+
+=Player Development=
+ * [XP Gaining Experience]
+ * [TeamUpgrades Gaining Team Upgrades]
+ * [PlayerUpgrades Gaining Player Upgrades]
+ * [Equipment Improving Equipment]
+
+=Difficulty Scaling=
+ * Making Specials Better
+ * Making Normals Better
+ * [DirectorDeck The Director Deck]

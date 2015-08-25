@@ -1,0 +1,149 @@
+#summary Designing the weapon stats and types
+<wiki:toc max_depth="4" />
+
+= Required Info =
+ # Name of Weapon
+ # Max Ammo
+ # Clip Size
+ # Rate of Fire
+ # Range
+ # Damage Modifier
+ # Exception Rules
+
+==Name of Weapon==
+Initially the following weapons will be developed
+ * pistol
+ * dual pistols
+ * SMG
+ * pump action shotgun
+ * sniper rifle
+ * assault rifle
+ * auto-shotgun
+ * stationary machine gun
+
+==Max Ammo==
+This will be the size of the deck of [AttackDeck Attack Cards] that the gun comes with when picked up/restocked with ammo. This should be factored by the clip size, multiplied by the number of times the gun can be reloaded.
+
+==Clip Size==
+This is the maximum number of [AttackDeck Attack Cards] the player may have in hand when using the weapon, and the number of cards the hand is refreshed to when reloading
+
+==Rate of Fire==
+This is how many [AttackDeck Attack Cards] the player may play in a singe turn from his hand.
+
+==Range==
+This is the maximum range that damage may be caused from the gun
+
+==Damage Modifier==
+This is a modifier to each [AttackDeck Attack Card] played when using the weapon, down to a minimum of 1. So if a player uses a weapon with a -1 damage modifier, and plays a 1-damage [AttackDeck Attack Card] then 1 point of damage is still scored.
+
+==Exception Rules==
+Some weapons will have specific rules to that weapon, which change normal rules. For example;
+ * Shotguns can be reloaded using movement points
+ * Sniper rifle causes piercing damageto zombies behind
+ * shotguns have a larger fire arc
+ * pistols do not run out of ammo
+
+=Translating Game Stats to cards=
+==Direct Translation==
+Using [Left4Dead#Weapon_Statistics Left4Dead's gun statistics] as an initial attempt to determine [AttackDeck Number of Attack Cards] and Hand Size. Assumptions are;
+ * Minimum hand size of 3
+ * Minimum play each turn of 1
+ * Take M16 Damage as "base" (it's in the middle)
+
+|| *Weapon* || *Game Damage* || *Game ROF* || *Game Clip* || *Card Clip* || *Card Play* || *Damage Mod* ||
+||Pistol||22||300rpm||8||3||4||-1||
+||Uzi||15||1000rpm||50||18||14||-2||
+||M16||31||700rpm||50||18||10||0||
+||Rifle||90||225rpm||15||5||3||+3||
+||Pump Shotgun||~140||69rpm||8||3||1||+5||
+||Auto Shotgun||~168||200rpm||10||4||3||+6||
+
+Hand size is too big (Ideally would prefer to keep it down to about 10 max). It's the vast discrepancy between the shotgun and the uzi (and to a lesser extent the M16) that causes the issue...
+
+The damage modifiers are equally massive (shotguns shot out multiple pellets, so can cause damage over a bigger area).
+
+==Option 1==
+
+ # Halve "Card Play"
+ # Halve "Card Clip" for auto-weapons (M16 / Uzi)
+ # +1 damage for uzi and M16
+ # Increase shotgun fire-arc for target selection
+ # Halve shotgun damage
+ # +1 on rifle, but all in a line per card
+
+Added the average and max damage (min damage is always 0), based on [AttackDeck01 Attack Deck version 1].
+Average damage per played card is 1.75 +- gun damage.
+
+|| *Weapon* || *Total Cards* || *Card Clip* || *Card Play* || *Damage Mod* || *Special* || *Av. Damage* || *Max Damage* || *Av. DOT* || *DOT Rounds* ||
+||Pistol||x||3||2||-1||Infinite reloads||2.25||4||1.125||x||
+||Uzi||90||9||7||-1||None||7.875||14||3.375||30||
+||M16||72||9||5||+1||None||13.75||20||6.41||24||
+||Rifle||65||5||3||+4||All kills in a line||17.25||21||9.58||39||
+||Pump Shotgun||51||3||1||+2||large fire-arc||3.75||5||2.81||68||
+||Auto Shotgun||55||4||3||+3||large fire arc||14.25||18||6.33||33||
+
+I feel the uzi is too high, and the shotgun a little weak. The +per card is a little too high an impact, given the base low average of the cards (1.75). Options to address this are;
+ # Increase card values (range 1-4 + miss, move average to 2)
+ # Have a flat damage bonus ( which may favour low fire-rate weapons more)
+ # Have some kind of scalable damage bonus (as more cards are played make damage value less)
+
+Just realised I didn't take into account the fact that 1-value cards would not be reduced by the negative weapon values. This would increase average damage of the pistols and uzi, but would not affect the shotgun. Corrected table accordingly.
+
+Also added Damage Over Time (DOT) to attempt to take into account reload frequency. thsi was calculated by;
+Average Fire using all cards until clip empty, then 1 round of reload / total number of rounds. This should equate to the average number of zombies a player can expect to kill with a given weapon given an infinite supply of suitable targets (in arc, in range etc etc).
+===Further Thoughts on Option 1===
+_(this is the result of a swimming session...you can think about a lot when swimming)_
+The numbers shown here for "average damage", "max damage" and "Av.DOT" are all based on the maximum number of cards being played per turn...
+
+...of course players would be idots to do that, and will only play the required cards needed to clear out the zombies. Also, a player outputting the maximum damage is going to be out of ammo _very_ quickly.
+
+I have added the "total cards" column, to indicate the total amount of cards that can be played through a weapon without restocking. At the end is a new column "DOT rounds", which indicates how many round the Av. DOT could be maintained...
+
+Tose numbers are far too large, so will address this in Option 2 below.
+
+==Option 2==
+
+ * reduce total ammo access (half)
+ * double reload times (2 turns) (in the game full-auto times and reload times are comparable)
+  * This will impact DOT's, as well as adding (ammo reload cycles) rounds to DOT rounds
+
+|| *Weapon* || *Total Cards* || *Card Clip* || *Card Play* || *Damage Mod* || *Special* || *Av. Damage* || *Max Damage* || *Av. DOT* || *DOT Rounds* ||
+||Pistol||x||3||2||-1||Infinite reloads||2.25||4||0.843||x||
+||Uzi||45||9||7||-1||None||7.875||14||2.531||20||
+||M16||36||9||5||+1||None||13.75||20||6.18||16||
+||Rifle||32||5||3||+4||All kills in a line||17.25||21||7.187||24||
+||Pump Shotgun||25||3||1||+2||large fire-arc||3.75||5||2.25||44||
+||Auto Shotgun||27||4||3||+3||large fire arc||14.25||18||4.75||25||
+
+===Team Damage Output===
+Need to have some rough idea of the amount of damage a team can output at the 2 stages of the game;
+ # basic weapons (uzi, pump-shot, pistol)
+ # advanced weapons (M16, Rifle, Auto-shotgun)
+This should then feed into the [DirectorDeck Director Deck] composition, to ensure that enough zombies (and spikes/troughs of them) are generated to give pressure, while keeping the game possible and close...
+
+====Basic Weapons====
+Average damage is 2.39 irrespective of weapon. 4 players could therefore kill 9-10 zombies per turn while ammo lasts (20 rounds for Uzi, 44 for shotgun).
+
+====Advanced Weapons====
+Average damage is 6 irrepsective of weapons. 4 players could therefore kill 24 zombies per turn while ammo lasts (16 rounds for M16, upto 25 for the Auto-shotgun).
+
+2-3 turns of "average kill" should provide pressure due to the reload-cycles of each weapon. In turn 1-2 of the reload cycle kills will be high, while as weapons hit reload points pressure will mount.
+
+==Option 3==
+_this is currently a branch from Option 1, not a follow-up to Option 2_
+
+ # use [AttackDeck02 Attack deck Version 2]
+ * Larger variance of cards
+ * Av. damage = 2 per card
+ * Less miss cards
+ * 5 x "4" value cards (uzi cannot play all)
+
+|| *Weapon* || *Card Clip* || *Card Play* || *Damage Mod* || *Special* || *Av. Damage* || *Max Damage* || *Av. DOT* ||
+||Pistol||3||2||-1||Infinite reloads||2.6||6||1.3||
+||Uzi||9||7||-1||None||9.1||19||3.9||
+||M16||9||5||+1||None||15||25||9||
+||Rifle||5||3||+4||All kills in a line||18||24||10||
+||Pump Shotgun||3||1||+2||large fire-arc||4||6||3||
+||Auto Shotgun||4||3||+3||large fire arc||15||21||6.66||
+
+Note an increase in maximums, though with only 5 max damage cards available much more unlightly to come by.

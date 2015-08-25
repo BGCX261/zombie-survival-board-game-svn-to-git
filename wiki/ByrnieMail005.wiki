@@ -1,0 +1,24 @@
+#summary 3rd Email to Byrnie
+
+Movement cards could work...you could also then put on them how and when they can be spent.
+
+My thinkings for normal zombies was 1 hit = kill, so when you play an attack card you get to kill 1-3 zombies (based on the card), or do damage to 1 special (to represent the focusing of a shot, comapred to the general spraying against hordes). I hadn't really factored in the melee attack too much yet, however as a base rule once per turn you can move 2/3 adjacent zombies in your forward arc back one hex (and to stop movement chains zombies can share hexes).
+
+I did have the push as a free action, however thinking about it perhaps it should cost an MP or 2? It's certainly a powerful action, especially if played during overwatch. If you want crescendo events you don't really want players just bunking down in a corner and push/shooting on overwatch every turn...you want them running round like loons :-D
+
+The Director Deck serves 2 purposes;
+
+1) When a new tile is placed, the Director Deck determines initial setup;
+   starting spawns
+   items (guns, health, explosives etc etc)
+   objects/special rules
+
+2) Every turn, a new director deck card is drawn, which determines spawns only
+
+So items can only appear on new tiles. I'm a little worried that the Director Deck could end up very busy, especially if it's going to have differing levels of spawn/item for different player statuses. I did have a variant idea on this.
+
+Director Deck just determines spawns (so is still drawn with new tiles, and every turn)
+A Tile Deck (probably needs a better name) is drawn when a new tile is placed (or even go a bit Descent, and the Tile Card shows which tile is to be placed), along with special rules.
+Items are "bought" by the player team, by spending special zombie kills, so when a new tile is placed, they can spend x special kills to add (for example) a health pack to the tile, or a weapon spawn. It gives a bit more control back to the players (perhaps too much. I suppose there is an option to add some randomness in here...they buy a "Tile Upgrade" perhaps, which is listed on the Tile Card...of course they have to decide this before the card is drawn...it might be a weapon stash, it may be just some pills)...
+
+Overall volumes of zombies could be determined by player numbers (as a scaling option), or perhaps some mounting number throughout the level (every turn add 1 to the zombie pool...it would stop people dragging their heels). You could then have a player upgrade ability that allows them to remove zombies from the available pool with certain attack cards? (for example, play a "headshot" card on a normal zombie to remove it from the pool).

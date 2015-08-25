@@ -1,0 +1,54 @@
+#summary 2nd version of attack deck
+
+= Composition =
+|| *Card Number* || *Name* || *Type* || *Attack Value* || *Special Attack Value* || *Friendly Fire Flag* ||
+||1||Headshot||Attack||1||3||N||
+||2||Short Burst||Attack||1||3||Y||
+||3||Hard Burst||Attack||2||2||N||
+||4||Wild Burst||Attack||2||2||Y||
+||5||Controlled Fire||Attack||2||1||N||
+||6||Controlled Fire||Attack||2||1||N||
+||7||Wild Spray||Attack||3||1||Y||
+||8||Wild Spray||Attack||3||1||Y||
+||9||Supressing Fire||Attack||4||0||N||
+||10||Bad Shot||Miss||0||0||N||
+||11||Headshot||Attack||1||3||N||
+||12||Short Burst||Attack||1||3||Y||
+||13||Hard Burst||Attack||2||2||N||
+||14||Wild Burst||Attack||2||2||Y||
+||15||Controlled Fire||Attack||2||1||N||
+||16||Controlled Fire||Attack||2||1||N||
+||17||Wild Spray||Attack||3||1||Y||
+||18||Wild Spray||Attack||3||1||Y||
+||19||Supressing Fire||Attack||4||0||N||
+||20||Bad Shot||Miss||0||0||N||
+||21||Headshot||Attack||1||3||N||
+||22||Short Burst||Attack||1||3||Y||
+||23||Hard Burst||Attack||2||2||N||
+||24||Wild Burst||Attack||2||2||Y||
+||25||Controlled Fire||Attack||2||1||N||
+||26||Controlled Fire||Attack||2||1||N||
+||27||Wild Spray||Attack||3||1||Y||
+||28||Wild Spray||Attack||3||1||Y||
+||29||Supressing Fire||Attack||4||0||N||
+||30||Bad Shot||Miss||0||0||N||
+||31||Headshot||Attack||1||3||N||
+||32||Short Burst||Attack||1||3||Y||
+||33||Hard Burst||Attack||2||2||N||
+||34||Wild Burst||Attack||2||2||Y||
+||35||Controlled Fire||Attack||2||1||N||
+||36||Controlled Fire||Attack||2||1||N||
+||37||Wild Spray||Attack||3||1||Y||
+||38||Wild Spray||Attack||3||1||Y||
+||39||Supressing Fire||Attack||4||0||N||
+||40||Bad Shot||Miss||0||0||N||
+||41||Headshot||Attack||1||3||N||
+||42||Short Burst||Attack||1||3||Y||
+||43||Hard Burst||Attack||2||2||N||
+||44||Wild Burst||Attack||2||2||Y||
+||45||Controlled Fire||Attack||2||1||N||
+||46||Controlled Fire||Attack||2||1||N||
+||47||Wild Spray||Attack||3||1||Y||
+||48||Wild Spray||Attack||3||1||Y||
+||49||Supressing Fire||Attack||4||0||N||
+||50||Bad Shot||Miss||0||0||N||
